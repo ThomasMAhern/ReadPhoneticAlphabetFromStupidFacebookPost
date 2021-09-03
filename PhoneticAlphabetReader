@@ -1,0 +1,14 @@
+stupid_fb_post = 'India foxtrot. Yankee oscar uniform. Charlie alpha november. \
+        Uniform november delta echo romeo sierra tango alpha november delta. Tango \
+        hotel india sierra. Crew ocean mesa mix every November tango. Washington igloos \
+        tango hill. Alpha. Hill every alpha Romeo Tango. Lima india kilo echo. \
+        Charlie oscar papa yankee. Alpha november delta. Papa alpha sierra tango echo. \
+        Tango oscar. Yankee oscar uniform romeo. Sierra tango alpha tango uniform sierra.'
+
+
+def read_military_speak(text):
+    letters = [i[0] for i in text.split(' ') if i != '']
+    letters_str = ''.join(letters)
+    return letters_str
+
+print(read_military_speak(stupid_fb_post))
